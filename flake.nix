@@ -39,7 +39,10 @@
 
           buildInputs = with pkgs; [
             clang
-            llvmPackages_17.bintools
+            llvmPackages_19.libcxxStdenv
+            llvmPackages_19.bintools
+            llvmPackages_19.libcxx
+            libcxx
             libusb1
             openssl
             pkg-config
